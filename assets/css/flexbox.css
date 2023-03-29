@@ -1,0 +1,137 @@
+  /*======= HEADER =======*/
+.cabecalhoPrincipal .container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav{
+  display: flex;
+}
+
+
+/*=======CONTEUDO PRINCIPAL=======*/
+.conteudoPrincipal-cursos{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.conteudoPrincipal-cursos-link{
+  width: 23%;
+}
+
+.videoSobre .container{
+  display: flex; /*os itens também se alinham verticalmente  ficaram alinhados horizontalmente*/
+}
+
+.videoSobre-video{
+  flex-grow: 2;/* atributo da propriedade flex p/o elemento filho, para completar o espaço vazios, aumentando o elemento*/
+}
+
+.videoSobre-sobre{ 
+  display: flex; 
+  flex-direction: column;/* Com a alteraçao da direção, os itens ficaram alinhados horizontalmente, devido a mudança de eixo causada pela alteraçao da direção*/
+  flex-grow: 1;
+  text-align: center;
+}
+.videoSobre-sobre-list{
+  flex-grow: 1; 
+}
+
+
+/*=======FOOTER=======*/
+.rodapePrincipal-navMap-list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  height: 250px;
+}
+
+.rodapePrincipal-patrocinadores .container{
+ display: flex;
+ justify-content: space-between;
+}
+.rodapePrincipal-patrocinadores-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+  display: flex;  /*os itens também se alinham verticalmente  ficaram alinhados horizontalmente*/
+}
+
+
+/*=======MEDIA QUERY======= */
+@media (max-width: 768px) {
+
+/* HEADER */
+.cabecalhoPrincipal .container{
+  align-items: initial;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cabecalhoPrincipal-nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.cabecalhoPrincipal-nav-link-app {
+  order: -1;
+}
+
+/*CONTEUDO PRINCIPAL*/
+
+.conteudoPrincipal-cursos{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link{
+  width: 100%;
+}
+
+/*FOOTER*/
+
+.rodapePrincipal-navMap-list{
+  display: flex;
+  flex-direction: column;
+   height: auto;
+}
+
+.rodapePrincipal-patrocinadores .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+ .rodapePrincipal-patrocinadores-list{
+   display: flex;
+   align-items: center;
+   width: 100%;
+ }
+ 
+ .rodapePrincipal-contatoForm-fieldset{
+   display: flex;
+   justify-content: center;
+ }
+
+ legend{
+   text-align: center;
+ }
+
+ .videoSobre .container{
+  display: flex; 
+  flex-direction: column;
+  align-items: center
+}
+.videoSobre-video{
+  flex-shrink: 4;
+}
+}

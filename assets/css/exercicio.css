@@ -1,0 +1,23 @@
+.flexContainer {
+  display: flex;
+  width: 400px;
+}
+.flexItem {
+  width: 200px;
+  height: 100px;
+}
+.flexItem:first-child {
+  background: brown;
+  flex-shrink: 2;
+}
+.flexItem:last-child {
+  background: blueviolet;
+}
+
+.flexItem:nth-child(3) {
+  background: red;
+}
+
+.flexItem:nth-child(2) {
+  background: rosybrown;
+}
